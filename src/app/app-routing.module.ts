@@ -28,7 +28,18 @@ import { NgxSpinnerService } from 'ngx-spinner';
                     },
                     {
                         path: 'information-management',
-                        loadChildren: () => import('app/information-management/information-management.module').then((m) => m.InformationManagementModule), //Lazy load main module
+                        loadChildren: () =>
+                            import('app/information-management/information-management.module').then(
+                                (m) => m.InformationManagementModule
+                            ), //Lazy load main module
+                        data: { preload: true },
+                    },
+                    {
+                        path: 'inspection-processes-management',
+                        loadChildren: () =>
+                            import('app/inspection-processes-management/inspection-processes-management.module').then(
+                                (m) => m.InspectionPrecessesManagementModule
+                            ), //Lazy load main module
                         data: { preload: true },
                     },
                     {
