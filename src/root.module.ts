@@ -237,6 +237,7 @@ export function getRemoteServiceBaseUrl(): string {
 
 export function getCurrentLanguage(): string {
     return convertAbpLocaleToAngularLocale(abp.localization.currentLanguage.name);
+    
 }
 
 export function getCurrencyCode(injector: Injector): string {

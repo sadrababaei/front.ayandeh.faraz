@@ -23,10 +23,39 @@ export class AppNavigationService {
             new AppMenuItem('Dashboard', 'Pages.Tenant.Dashboard', 'flaticon-line-graph', '/app/main/dashboard'),
             new AppMenuItem('Tenants', 'Pages.Tenants', 'flaticon-list-3', '/app/admin/tenants'),
             new AppMenuItem('Editions', 'Pages.Editions', 'flaticon-app', '/app/admin/editions'),
-            new AppMenuItem('BasicInformationManagement', '', 'flaticon-app', '', [], [
-                new AppMenuItem('ChecklistsManagement','Pages.Administration.Host.Dashboard','flaticon-map','/app/information-management/checklists-management'),
-
-            ]),
+            new AppMenuItem(
+                'BasicInformationManagement',
+                '',
+                'flaticon-app',
+                '',
+                [],
+                [
+                    new AppMenuItem(
+                        'ChecklistsManagement',
+                        'Pages.Administration.Host.Dashboard',
+                        'flaticon-map',
+                        '/app/information-management/checklists-management'
+                    ),
+                    new AppMenuItem(
+                        'CircularsManagement',
+                        'Pages.Administration.Host.Dashboard',
+                        'flaticon-map',
+                        '/app/information-management/circulars-management'
+                    ),
+                    new AppMenuItem(
+                        'QuestionGroupManagement',
+                        'Pages.Administration.Host.Dashboard',
+                        'flaticon-map',
+                        '/app/information-management/question-group-management'
+                    ),
+                    new AppMenuItem(
+                        'QuestionsManagement',
+                        'Pages.Administration.Host.Dashboard',
+                        'flaticon-map',
+                        '/app/information-management/questions-management'
+                    ),
+                ]
+            ),
             new AppMenuItem(
                 'Administration',
                 '',
@@ -40,7 +69,12 @@ export class AppNavigationService {
                         'flaticon-map',
                         '/app/admin/organization-units'
                     ),
-                    new AppMenuItem('Branches','Pages.Administration.Host.Dashboard','flaticon-map','/app/admin/branches'),
+                    new AppMenuItem(
+                        'Branches',
+                        'Pages.Administration.Host.Dashboard',
+                        'flaticon-map',
+                        '/app/admin/branches'
+                    ),
                     new AppMenuItem('Roles', 'Pages.Administration.Roles', 'flaticon-suitcase', '/app/admin/roles'),
                     new AppMenuItem('Users', 'Pages.Administration.Users', 'flaticon-users', '/app/admin/users'),
                     new AppMenuItem(

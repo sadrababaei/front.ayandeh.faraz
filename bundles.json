@@ -613,6 +613,12 @@
       ]
     },
     {
+      "output": "src/assets/primeng/datatable/css/primeng.datatable-rtl.min.css",
+      "input": [
+        "src/assets/primeng/datatable/css/primeng.datatable-rtl.css"
+      ]
+    },
+    {
       "output": "src/assets/common/styles/metronic-customize.min.css",
       "input": [
         "src/assets/common/styles/metronic-customize.css"

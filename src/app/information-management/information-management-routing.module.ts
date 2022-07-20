@@ -9,24 +9,36 @@ import { NavigationEnd, Router, RouterModule } from '@angular/router';
                 children: [
                     {
                         path: 'checklists-management',
-                        loadChildren: () => import('./checklists-management/checklists-management.module').then((m) => m.ChecklistsManagementModule),
-                        data: { permission: 'Pages.Administration.Users' },
-                    },
-/*                     {
-                        path: 'users',
-                        loadChildren: () => import('./circulars-management/circulars-management.module').then((m) => m.UsersModule),
+                        loadChildren: () =>
+                            import('./checklists-management/checklists-management.module').then(
+                                (m) => m.ChecklistsManagementModule
+                            ),
                         data: { permission: 'Pages.Administration.Users' },
                     },
                     {
-                        path: 'roles',
-                        loadChildren: () => import('./questions-management/questions-management.module').then((m) => m.RolesModule),
+                        path: 'circulars-management',
+                        loadChildren: () =>
+                            import('./circulars-management/circulars-management.module').then(
+                                (m) => m.CircularsManagementModule
+                            ),
+                        data: { permission: 'Pages.Administration.Users' },
+                    },
+                    {
+                        path: 'question-group-management',
+                        loadChildren: () =>
+                            import('./question-group-management/question-group-management.module').then(
+                                (m) => m.QuestionGroupManagementModule
+                            ),
                         data: { permission: 'Pages.Administration.Roles' },
                     },
                     {
-                        path: 'auditLogs',
-                        loadChildren: () => import('./questions-groups-management/questions-groups-management.module').then((m) => m.AuditLogsModule),
+                        path: 'questions-management',
+                        loadChildren: () =>
+                            import('./questions-management/questions-management.module').then(
+                                (m) => m.QuestionsManagementModule
+                            ),
                         data: { permission: 'Pages.Administration.AuditLogs' },
-                    }, */
+                    },
                 ],
             },
         ]),

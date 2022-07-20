@@ -59,6 +59,8 @@
               "src/assets/primeng/autocomplete/css/primeng.autocomplete.less",
               "src/assets/primeng/tree/css/primeng.tree.css",
               "src/assets/primeng/context-menu/css/primeng.context-menu.css",
+              "src/assets/primeng/datatable/css/primeng.datatable-rtl.css",
+              
 
               "src/assets/fonts/fonts-poppins.css",
               "src/assets/fonts/fonts-roboto.css",
