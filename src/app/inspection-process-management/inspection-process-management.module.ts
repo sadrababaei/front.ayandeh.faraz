@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { InspectionProcessesManagementRoutingModule } from './inspection-processes-management-routing.module';
+import { InspectionProcessManagementRoutingModule } from './inspection-process-management-routing.module';
 import { TreeDragDropService } from 'primeng/api';
 import {
     BsDatepickerConfig,
@@ -22,7 +22,7 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
 
 @NgModule({
     imports: [
-        InspectionProcessesManagementRoutingModule,
+        InspectionProcessManagementRoutingModule,
         ModalModule.forRoot(),
         TabsModule.forRoot(),
         TooltipModule.forRoot(),
@@ -41,4 +41,4 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
         { provide: PERFECT_SCROLLBAR_CONFIG, useValue: DEFAULT_PERFECT_SCROLLBAR_CONFIG },
     ],
 })
-export class InspectionPrecessesManagementModule {}
+export class InspectionPrecessManagementModule {}

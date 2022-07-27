@@ -4,7 +4,7 @@
   "newProjectRoot": "projects",
   "projects": {
     "abp-zero-template": {
-      "root": "",
+      "root": "e2e",
       "sourceRoot": "src",
       "projectType": "application",
       "architect": {
@@ -72,6 +72,7 @@
 
               "src/app/shared/core.less",
               "src/app/shared/layout/layout.less",
+              "node_modules/devextreme/dist/css/dx.light.css",
               "src/styles.css"
             ],
             "scripts": [

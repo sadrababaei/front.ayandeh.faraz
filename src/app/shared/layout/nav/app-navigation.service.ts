@@ -57,6 +57,27 @@ export class AppNavigationService {
                 ]
             ),
             new AppMenuItem(
+                'InspectionProcessManagement',
+                '',
+                'flaticon-app',
+                '',
+                [],
+                [
+                    new AppMenuItem(
+                        'InspectionsManagement',
+                        'Pages.Administration.Host.Dashboard',
+                        'flaticon-map',
+                        '/app/inspection-process-management/inspections-management'
+                    ),
+                    new AppMenuItem(
+                        'ProcessManagement',
+                        'Pages.Administration.Host.Dashboard',
+                        'flaticon-map',
+                        '/app/inspection-process-management/process-management'
+                    ),
+                ]
+            ),
+            new AppMenuItem(
                 'Administration',
                 '',
                 'flaticon-interface-8',

@@ -1,1 +1,28 @@
-<h1>question-group-management</h1>
+<div [@routerTransition]>
+    <div class="content d-flex flex-column flex-column-fluid">
+        <sub-header [title]="'Question Groups' | localize" [description]="'QuestionGroupsHeaderInfo' | localize">
+            <div role="actions"></div>
+        </sub-header>
+        <div [class]="containerClass">
+            <div class="card card-custom">
+                <div class="card-body">
+                    <div class="col-md-6">
+                        <div class="mb-5">
+                            <label class="form-label" for="GroupName">{{ 'GroupName' | localize }}</label>
+                            <input id="GroupName" type="text" name="GroupName" class="form-control" />
+                        </div>
+                        <button type="button" class="btn btn-primary float-end">
+                            {{ 'Add' | localize }}
+                        </button>
+                    </div>
+                    <custom-grid
+                        [dataSource]="dataSource"
+                        [gridName]="'question-groups'"
+                        [columns]="columns"
+                        [storageKey]="'question-groups-storage'"
+                    ></custom-grid>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

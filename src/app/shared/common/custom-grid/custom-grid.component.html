@@ -1,0 +1,34 @@
+<dx-data-grid
+    #dataGridContainer
+    [dataSource]="dataSource"
+    [allowColumnReordering]="true"
+    [allowColumnResizing]=""
+    [columnAutoWidth]="true"
+    [columnResizingMode]="true"
+    [remoteOperations]="true"
+    [height]="600"
+    [showBorders]="true"
+    [customizeColumns]="customizeColumns"
+    [columns]="columns"
+>
+    <dxo-search-panel [visible]="true" location="after" [width]="240"></dxo-search-panel>
+    <dxo-filter-row [visible]="true"></dxo-filter-row>
+    <dxo-header-filter [visible]="true"></dxo-header-filter>
+    <dxo-scrolling mode="virtual"></dxo-scrolling>
+    <dxo-grouping [autoExpandAll]="false"></dxo-grouping>
+    <dxo-toolbar>
+        <div class="dx-toolbar-before"></div>
+        <dxi-item name="columnChooserButton"></dxi-item>
+        <dxi-item name="exportButton"></dxi-item>
+        <dxi-item location="after">
+            <dx-button icon="exportpdf" text=""></dx-button>
+        </dxi-item>
+        <dxi-item location="after">
+            <dx-button icon="export" text=""></dx-button>
+        </dxi-item>
+        <dxi-item name="searchPanel"></dxi-item>
+    </dxo-toolbar>
+    <dxo-state-storing [enabled]="true" type="custom" [storageKey]="storageKey"></dxo-state-storing>
+    <dxo-column-chooser [enabled]="true"></dxo-column-chooser>
+    <dxo-export [enabled]="true"></dxo-export>
+</dx-data-grid>

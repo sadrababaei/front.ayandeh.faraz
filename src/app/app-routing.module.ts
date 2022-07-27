@@ -35,10 +35,10 @@ import { NgxSpinnerService } from 'ngx-spinner';
                         data: { preload: true },
                     },
                     {
-                        path: 'inspection-processes-management',
+                        path: 'inspection-process-management',
                         loadChildren: () =>
-                            import('app/inspection-processes-management/inspection-processes-management.module').then(
-                                (m) => m.InspectionPrecessesManagementModule
+                            import('@app/inspection-process-management/inspection-process-management.module').then(
+                                (m) => m.InspectionPrecessManagementModule
                             ), //Lazy load main module
                         data: { preload: true },
                     },
